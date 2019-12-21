@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".AddRecord">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Add Student"
+            android:textColor="#3D5AFE"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter name:    "/>
+
+            <EditText
+                android:id="@+id/nameT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Student Name"
+                android:textColor="#3D5AFE"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter reg no:   "/>
+
+            <EditText
+                android:id="@+id/regT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Student Reg #"
+                android:textColor="#3D5AFE"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter mobile:  "/>
+
+            <EditText
+                android:id="@+id/mobileT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Student Mobile #"
+                android:textColor="#3D5AFE"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/layout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/roundbutton"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#3D5AFE"
+        android:textSize="14sp"
+        android:onClick="addRecord"
+        android:text="Add student"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
